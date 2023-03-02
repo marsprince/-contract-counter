@@ -25,7 +25,11 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
-    "deploy": "npx hardhat run --network harmony scripts/deploy.js",
-    "deploy: test": "npx hardhat run --network harmonytest scripts/deploy.js"
+    "deploy": "npx hardhat run --network harmony scripts/deploy-main.js",
+    "deploy:dev": "npx hardhat run --network localhost scripts/deploy-main.js",
+    "deploy:test": "npx hardhat run --network harmonytest scripts/deploy-main.js",
+
+    "network:local": "npx hardhat node",
+    "dev": "npm run compile && npm run deploy:dev"
   }
 }
