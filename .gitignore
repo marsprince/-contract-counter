@@ -90,7 +90,6 @@ sw.*
 *.swp
 
 build
-test
 .secret
 
 #Hardhat files
